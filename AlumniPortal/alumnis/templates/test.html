@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Alumnis</h1>
+
+    <table border="1">
+    {% for i in ouralumnis %}
+    <tr>
+    <td>{{ i.id }}</td>
+    <td>{{ i.email }}</td>
+    <td>{{ i.password }}</td>
+    </tr>
+    {% endfor %}
+    </table>
+    <a href="alumniReg/">Sign Up</a>
+</body>
+</html>
