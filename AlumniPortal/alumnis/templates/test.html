@@ -6,9 +6,10 @@
     <table border="1">
     {% for i in ouralumnis %}
     <tr>
-    <td>{{ i.id }}</td>
+    <td><a href="update/{{ i.id }}">{{ i.id }}</a></td>
     <td>{{ i.email }}</td>
     <td>{{ i.password }}</td>
+    <td><a href="delete/{{ i.id }}">delete</a></td>
     </tr>
     {% endfor %}
     </table>
